@@ -1,4 +1,6 @@
-console.log("Hello from JavaScript");
-alert("Hello")
-alert("World!");
-console.log("Welcome to Programming");
+typeof("hello");
+'string'
+typeof(5454);
+'number'
+typeof(true);
+'boolean'
