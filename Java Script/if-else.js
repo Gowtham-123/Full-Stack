@@ -1,15 +1,24 @@
-prompt("What is your name ? ");
-prompt("What is their name ? ");
-
-var number = Math.random() * 100 ;
-number = Math.floor(number) + 1;
-
-if(number > 70) {
-    alert("Your love Score is " + number + "%," + " You are made for each other.");
-}
-if(number > 30 && number <= 70) {
-    alert("Your love Score is " + number + "%.")
-}
- else {
-    alert("Your love Score is " + number + "%." + " You need to work on your relationship.");
-}
+function isLeap(year) {
+    
+    /**************Don't change the code above****************/    
+        
+        //Write your code here.    
+    
+    if (year % 4 === 0){
+        if (year % 100 === 0){
+            if (year % 400 === 0){
+                return "Leap year.";
+                            }else {
+                                return "Not leap year.";
+                            } 
+                     }else {
+        return "Leap year.";}
+    }else{
+        return "Not leap year."
+    }
+    
+        
+    
+    /**************Don't change the code below****************/    
+    
+    }
