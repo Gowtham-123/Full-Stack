@@ -6,6 +6,10 @@ number = Math.floor(number) + 1;
 
 if(number > 70) {
     alert("Your love Score is " + number + "%," + " You are made for each other.");
-} else {
-    alert("Your love Score is " + number + "%." );
+}
+if(number > 30 && number <= 70) {
+    alert("Your love Score is " + number + "%.")
+}
+ else {
+    alert("Your love Score is " + number + "%." + " You need to work on your relationship.");
 }
