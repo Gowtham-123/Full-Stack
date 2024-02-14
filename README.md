@@ -1,2 +1,2 @@
 # Full-Stack
-Full Stack from scratch
+Full Stack from scratch.
