@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,19 +6,22 @@
     <title>React</title>
   </head>
 
-  <body></body>
-  <div id="root"></div>
-  <script
-    crossorigin
-    src="https://unpkg.com/react@18/umd/react.development.js"
-  ></script>
-  <script
-    crossorigin
-    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-  ></script>
-  <script>
-    const heading = React.createElement("h1", {}, "Namaste React!");
-    const root = ReactDOM.createRoot(document.getElementById("root"));
-    root.render(heading);
-  </script>
+  <body>
+    <div id="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+      const heading = React.createElement("h1",{ id: "title",},"Heading 1");
+      const heading2 = React.createElement("h2",{id: "subtitle",},"Heading 2");
+      const container = React.createElement("div",{id:"container",},[heading,heading2]);
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(container);
+    </script>
+  </body>
 </html>
