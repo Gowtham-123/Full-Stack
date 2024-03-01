@@ -19,7 +19,8 @@ Tree Shaking is a powerful optimization technique used by JavaScript module bund
 7. What is Hot Module Replacement?
 Hot Module Replacement is a tool for speeding up the development process and improving developer productivity.
 
-8.  List down your favourite 5 superpowers of Parcel and describe any 3 of them in your own words?
+8.  List down your favourite 5 superpowers of Parcel and describe any 3 of them in your
+own words?
 minify - remove unnecessary characters from the code.
 compress
 compatible - makes compatible for all types of browsers
@@ -29,7 +30,7 @@ clean the code
 9. What is `.gitignore`? What should we add and not add into it?
 The .gitignore file is a text file used by version control systems like Git to specify files and directories that should be ignored and not tracked by the version control system. we can add parcel cache files into it and we should not add packahe-lock.json files to it.
 
-10. What is the difference between `package.json` and `package-lock.json
+10. - What is the difference between `package.json` and `package-lock.json
 'package.json' is a file containing project information and dependency declarations, while 'package-lock.json' is a file containing detailed dependency information.
 
 11. Should I not modify `package-lock.json`?
