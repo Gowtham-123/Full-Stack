@@ -35,3 +35,23 @@ function deepEqual(obj1, obj2) {
 // Usage example
 console.log(deepEqual({a: 1, b: {c: 5}}, {a: 1, b: {c: 5}})); // true
 console.log(deepEqual({a: 1, b: {c: 5}}, {a: 1, b: {c: 6}})); // false
+
+/* Throttling and Debouncing : */
+function throttle(func, limit) {
+  let inThrottle;
+  return function() {
+    const args = arguments;
+    const context = this;
+    if (!inThrottle) {
+      func.apply(context, args);
+      inThrottle = true;
+      setTimeout(() => inThrottle = false, limit);
+    }
+  }
+}
+
+// Usage example
+window.addEventListener('resize', throttle(function(evt) {
+  console.log(window.innerWidth);
+  console.log(window.innerHeight);
+}, 1000));
