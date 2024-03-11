@@ -55,3 +55,18 @@ window.addEventListener('resize', throttle(function(evt) {
   console.log(window.innerWidth);
   console.log(window.innerHeight);
 }, 1000));
+
+function debounce(func, delay) {
+  let debounceTimer;
+  return function() {
+    const context = this;
+    const args = arguments;
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => func.apply(context, args), delay);
+  }
+}
+
+// Usage example
+window.addEventListener('input', debounce(function(evt) {
+  console.log(evt.target.value);
+}, 500));
