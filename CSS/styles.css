@@ -7,10 +7,10 @@ ol {
     color: red;
   }
   li[class="note"]{
-    font-size: 20px;
+    font-size: 30px;
   } 
   li[id="id-selector-demo"]{
-    color: green;
+    color: blue;
   }
   li[value="4"]{
     color: blue;
